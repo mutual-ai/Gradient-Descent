@@ -13,4 +13,11 @@ Next, we test coordinate descent and compare it to the gradient descent. We find
 of error *E(u, v)* after 15 iterations of the coordinate descent is close to 0.1398.
 
 
-*logistic_regression.m*
+*logistic_regression.m*:
+In this file, I created a target function and evaluated outputs (+1 or -1) for each point
+based on where they were with respect to a randomly generated line. We used Logistic Regression
+with Stochastic Gradient Descent to find our hypothesis function *g*, and estimated the cross
+entropy error *E_out*. I stopped running the SGD algorithm once the magnitude of the difference
+between two different weight vectors from consecutive epochs is less than 0.01.
+I repeated the experiment 100 times to take the average values and found that the average cross
+entropy error was 0.1014. This took an average of 337.99 epochs to reach.
